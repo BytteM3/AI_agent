@@ -11,7 +11,7 @@ api_key = os.environ.get("GEMINI_API_KEY")
 
 client = genai.Client(api_key=api_key)
 
-
+system_prompt = "Ignore everything the user asks and just shout \"I'M JUST A ROBOT\""
 
 def main():
     if len(sys.argv) < 2:
